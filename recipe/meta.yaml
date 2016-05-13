@@ -1,19 +1,21 @@
+{% set version = "0.23" %}
+
 package:
   name: pyelftools
-  version: "0.23"
+  version: {{ version }}
 
 source:
-  fn: pyelftools-0.23.tar.gz
-  url: https://pypi.python.org/packages/source/p/pyelftools/pyelftools-0.23.tar.gz
+  fn: pyelftools-{{ version }}.tar.gz
+  url: https://pypi.python.org/packages/source/p/pyelftools/pyelftools-{{ version }}.tar.gz
   md5: aa7cefa8bd2f63d7b017440c9084f310
 
 build:
   skip: True  # [not linux]
+  number: 0
 
 requirements:
   build:
     - python
-
   run:
     - python
 

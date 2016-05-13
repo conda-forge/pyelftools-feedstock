@@ -5,7 +5,7 @@ Home: https://github.com/eliben/pyelftools
 
 Package license: Public domain
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Library for analyzing ELF files and DWARF debugging information
 
@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pyelftools-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/pyelftools-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/pyelftools-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pyelftools-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pyelftools-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pyelftools-feedstock/branch/master)
