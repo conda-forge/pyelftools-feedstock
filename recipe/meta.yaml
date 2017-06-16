@@ -7,7 +7,7 @@ package:
 source:
   fn: pyelftools-{{ version }}.tar.gz
   url: https://pypi.org/packages/source/p/pyelftools/pyelftools-{{ version }}.tar.gz
-  md5: aa7cefa8bd2f63d7b017440c9084f310
+  sha256: fc57aadd096e8f9b9b03f1a9578f673ee645e1513a5ff0192ef439e77eab21de
 
 build:
   skip: True  # [not linux]
