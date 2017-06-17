@@ -32,7 +32,7 @@ about:
   home: https://github.com/eliben/pyelftools
   license: Public domain
   license_file: LICENSE
-  summary: 'Library for analyzing ELF files and DWARF debugging information'
+  summary: Library for analyzing ELF files and DWARF debugging information
 
 extra:
   recipe-maintainers:
