@@ -3,7 +3,7 @@ About pyelftools
 
 Home: https://github.com/eliben/pyelftools
 
-Package license: Public domain
+Package license: Public Domain
 
 Feedstock license: BSD 3-Clause
 
