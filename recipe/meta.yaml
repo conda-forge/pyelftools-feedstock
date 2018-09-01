@@ -5,17 +5,18 @@ package:
   version: {{ version }}
 
 source:
-  fn: pyelftools-{{ version }}.tar.gz
   url: https://pypi.org/packages/source/p/pyelftools/pyelftools-{{ version }}.tar.gz
   sha256: 89c6da6f56280c37a5ff33468591ba9a124e17d71fe42de971818cbff46c1b24
 
 build:
-  skip: True  # [not linux]
   number: 0
+  skip: True  # [not linux]
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   build:
     - python
+    - pip
   run:
     - python
 
@@ -37,3 +38,4 @@ about:
 extra:
   recipe-maintainers:
     - msarahan
+    - ocefpaf
