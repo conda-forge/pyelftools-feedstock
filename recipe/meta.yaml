@@ -1,4 +1,4 @@
-{% set version = "0.26" %}
+{% set version = "0.27" %}
 
 package:
   name: pyelftools
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pyelftools/pyelftools-{{ version }}.tar.gz
-  sha256: 86ac6cee19f6c945e8dedf78c6ee74f1112bd14da5a658d8c9d4103aed5756a2
+  sha256: cde854e662774c5457d688ca41615f6594187ba7067af101232df889a6b7a66b
 
 build:
-  number: 1
+  number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   build:
