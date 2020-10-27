@@ -5,11 +5,9 @@ Home: https://github.com/eliben/pyelftools
 
 Package license: Public Domain
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyelftools-feedstock/blob/master/LICENSE.txt)
 
 Summary: Library for analyzing ELF files and DWARF debugging information
-
-
 
 Current build status
 ====================
