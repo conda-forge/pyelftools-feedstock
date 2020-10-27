@@ -1,22 +1,24 @@
+{% set name = "pyelftools" %}
 {% set version = "0.27" %}
 
+
 package:
-  name: pyelftools
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/p/pyelftools/pyelftools-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyelftools-{{ version }}.tar.gz
   sha256: cde854e662774c5457d688ca41615f6594187ba7067af101232df889a6b7a66b
 
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
-    - python
+  host:
     - pip
+    - python
   run:
     - python
 
@@ -24,16 +26,16 @@ test:
   imports:
     - elftools
     - elftools.common
-    - elftools.construct
-    - elftools.construct.lib
-    - elftools.dwarf
-    - elftools.elf
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/eliben/pyelftools
-  license: Public Domain
-  license_file: LICENSE
   summary: Library for analyzing ELF files and DWARF debugging information
+  license: Unlicense
+  license_file: LICENSE
 
 extra:
   recipe-maintainers:
