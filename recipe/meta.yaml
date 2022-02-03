@@ -1,5 +1,5 @@
 {% set name = "pyelftools" %}
-{% set version = "0.27" %}
+{% set version = "0.28" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyelftools-{{ version }}.tar.gz
-  sha256: cde854e662774c5457d688ca41615f6594187ba7067af101232df889a6b7a66b
+  sha256: 53e5609cac016471d40bd88dc410cd90755942c25e58a61021cfdf7abdfeacff
 
 build:
   number: 0
