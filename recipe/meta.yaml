@@ -12,13 +12,14 @@ source:
 
 build:
   number: 0
-  noarch: python
+  # noarch: python
+  # this cannot be noarch b/c it has scripts
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - pip
     - python
+    - pip
   run:
     - python
 
