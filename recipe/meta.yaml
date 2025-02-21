@@ -1,5 +1,5 @@
 {% set name = "pyelftools" %}
-{% set version = "0.31" %}
+{% set version = "0.32" %}
 
 
 package:
@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyelftools-{{ version }}.tar.gz
-  sha256: c774416b10310156879443b81187d182d8d9ee499660380e645918b50bc88f99
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyelftools-{{ version }}.tar.gz
+  sha256: 6de90ee7b8263e740c8715a925382d4099b354f29ac48ea40d840cf7aa14ace5
 
 build:
-  number: 1
+  number: 0
   # noarch: python
   # this cannot be noarch b/c it has scripts
   script: {{ PYTHON }} -m pip install . -vv
