@@ -32,9 +32,9 @@ test:
     - elftools.common
   commands:
     - pip check
-    - python   {{ python_min }}
   requires:
     - pip
+    - python   {{ python_min }}
 
 about:
   home: https://github.com/eliben/pyelftools
