@@ -11,21 +11,20 @@ source:
   sha256: 6de90ee7b8263e740c8715a925382d4099b354f29ac48ea40d840cf7aa14ace5
 
 build:
-  number: 0
-  # noarch: python
-  # this cannot be noarch b/c it has scripts
+  number: 1
+  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
-    - python                                 # [build_platform != target_platform]
-    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
     - python
     - setuptools >=46.4.0
     - pip
   run:
     - python
+    # different packages because of python scripts
+    - __unix    # [unix]
+    - __win     # [win]
 
 test:
   imports:
